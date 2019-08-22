@@ -1,0 +1,134 @@
+/* ----DEFAULT ELEMENT STYLING START---- */
+html {
+    /* Positioning */
+    position: relative;
+
+    /* Box-model */
+    min-height: 100%;
+}
+
+body {
+    /* Positioning */
+    margin-top: 50px;
+    margin-bottom: 150px;
+    background-color: white;
+    color: rgb(44, 37, 37);
+
+    /* Typography */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* background-image: url("graduation.jpg");
+    background-repeat: no-repeat; */
+    /* background: url("graduation.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #0C5C7C;
+    z-index:1; 
+}
+
+.nav.navbar-nav li a {
+    color: #F5BD5D;
+}
+
+
+/* FOOTER */
+/* footer {
+    background-color: #2e0202;
+    color: #b6bdfc;
+    padding: 25px;
+    height: 50px;
+} */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #3DBDF0;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    height: 15px;
+    width: 100%;
+}
+
+/* .col-sm-3{
+    border: solid 2px #2e0202;
+} */
+
+/* https://www.lifewire.com/stretch-background-image-3466979 */
+/* #bg-test {
+    border: solid 2px #2e0202;
+} */
+
+.jumbotron{
+    color: white;
+    background-color: #3DBDF0;
+    height: 120px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#address-map {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin:0;
+    padding:0; 
+    /* border: 1px solid pink;
+    border-radius: 8px; */
+}
+
+#salary-info-text {
+    /* color: black; */
+    text-align: center;
+    text-shadow: pink;
+}
+#salary-info-text1 {
+    /* color: black; */
+    text-align: center;
+    text-shadow: pink;
+}
+#salary-info-text2 {
+    /* color: black; */
+    text-align: center;
+    text-shadow: pink;
+}
+
+
+/* https://www.wikihow.com/Create-a-Dropdown-Menu-in-HTML-and-CSS */
+.dropbtn {
+    background-color: black;
+    color: pink;
+    padding: 5px;
+    font-size: 32px;
+    border: none;
+}
+
+#basic-info-text {
+    text-align: center;
+}
+#basic-info-text1 {
+    text-align: center;
+}
+#basic-info-text2 {
+    text-align: center;
+}
+
+.modebar{
+    display: none !important;
+}
+
+.myTwitter{
+    background-color: #3DBDF0;
+}
+
