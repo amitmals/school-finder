@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Who we are? </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    <!-- Our own CSS stylesheet -->
+    <!-- <link rel="stylesheet" href="../static/css/style.css" media="screen"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_aboutus.css') }}">
+</head>
+</head>
+<body>
+    <div id="bg-test">
+  
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Meet us</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ url_for('home')}}">Home</a></li>
+                <li class="active"><a href="{{ url_for('about')}}">About us</a></li>
+                <li><a href="{{ url_for('compare2')}}">Compare Schools</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/amitmals/IPEDS"><span class="link-github"></span> Github</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="container text-center">
+                <div id="jumbotron-data">
+                    <h1>About us</h1>      
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid bg-3 text-center">    
+        <h1>Meet the team</h1><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Dan</h2>
+                <div id="info-Dan">
+                    <img src="/static/images/Dan.png" alt="DanTheMan">
+                    <hr>
+                    <h3>
+                        "Given my experiece with Universities.com, I wanted to bridge the gap that my kids see today in selecting a school"
+                    </h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-4"> 
+                <h2>Manu</h2>
+                <div id="info-Manu">
+                    <img src="/static/images/Manu.png" alt="ManuTheMan">
+                    <hr>
+                    <h3>
+                        "Always looking for he Golden Nuggets to add value to Businesses"
+                    </h3>
+                    <hr>
+                </div>
+            
+            </div>
+            <div class="col-sm-4"> 
+                <h2>Amit</h2>
+                <div id="info-Amit">
+                    <img src="/static/images/Amit.png" alt="MythsTheMan">
+                    <hr>
+                    <h3>
+                        "The inspiration is to have a one stop solution to search, compare, discuss and contact all schools and bootcamps in USA!"
+                    </h3>
+                    <hr>
+                </div>
+            
+            </div>
+        </div>
+        </div><br>
+        <footer class="container-fluid text-center">
+            <p>-UCSD BOOTCAMP-</p>
+        </footer>
+        
+        <!-- API key -->
+        <!-- <script type="text/javascript" src="config.js"></script> -->
+        <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+        <!-- JS -->
+        <!-- <script type="text/javascript" src="logic_amit.js"></script> -->
+        <!-- <script src="{{ url_for('static', filename='js/logic.js') }}"></script> -->
+
+
+    </div>
+</body>
+</html>

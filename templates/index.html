@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>School </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    <!-- Our own CSS stylesheet -->
+    <!-- <link rel="stylesheet" href="../static/css/style.css" media="screen"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+</head>
+<body>
+    <div id="bg-test">
+  
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Select School</a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="{{ url_for('about')}}">About us</a></li>
+                <li><a href="{{ url_for('compare2')}}">Compare Schools</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/amitmals/IPEDS"><span class="link-github"></span> Github</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="container text-center">
+                <div id="jumbotron-data">
+                    <h1>Welcome to School Information finder</h1>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid bg-3 text-center"> 
+            
+            <div class="dropdown">
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-sm-3">
+                    <!-- <p>basic-info-text</p> -->
+                    <div id="basic-info-text">
+                        <img src="/static/images/ipeds.png" alt="Ipeds" width= 80%  class="center">
+                    </div>
+                </div>
+                <div class="col-sm-3"> 
+                    <!-- <p>scores-plot</p> -->
+                    <div id="scores-plot">
+                        <img src="/static/images/js.png" alt="js" width= 70% class="center">
+                    </div>
+                
+                </div>
+                <div class="col-sm-3"> 
+                    <!-- <p>graduation-rate-bar</p> -->
+                    <div id="gender-guage">
+                        <img src="/static/images/mongo.png" alt="mongo" width= 70% class="center">
+                    </div>
+                
+                </div>
+                <div class="col-sm-3">
+                    <!-- <p>demographics-pie</p> -->
+                    <div id="demographics-pie">
+                        <img src="/static/images/python.png" alt="python" width= 70% class="center">
+                    </div>
+                </div>
+            </div>
+            <!-- </div><br> -->
+            <br>
+            <!-- <div class="container-fluid bg-3 text-center">     -->
+        <div class="row">
+            <div class="col-sm-3">
+                <!-- <p>address-map</p> -->
+                <div id="temp"><img src="/static/images/flask.png" alt="flask" width= 70% class="center">
+                </div>
+                
+                <div id="address-map"></div>
+            </div>
+            <div class="col-sm-3"> 
+                <!-- <p>cost-5-years-line</p> -->
+                <div id="costs-school">
+                    <img src="/static/images/leafletjs.png" alt="leaflet" width= 70% class="center">
+                </div>
+            </div>
+            <div class="col-sm-3"> 
+                <!-- <p>salary-info-text</p> -->
+                <div id="salary-info-text">
+                 <img src="/static/images/pandas.png" alt="pandas" width= 70% class="center">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <!-- <p>popular-courses-table</p> -->
+                <div id="myTwitter">
+                    <!-- <h2>Updates</h2> -->
+                    <a class="twitter-timeline" href="https://twitter.com/schoolpicker1?ref_src=twsrc%5Etfw">Updates by schoolpicker1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+            <!-- </div><br><br> -->
+    
+
+        <footer class="container-fluid text-center">
+        <p>-UCSD BOOTCAMP-</p>
+        </footer>
+        
+        <!-- API key -->
+        <!-- <script type="text/javascript" src="config.js"></script> -->
+        <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+        <!-- JS -->
+        <!-- <script type="text/javascript" src="logic_amit.js"></script> -->
+        <script src="{{ url_for('static', filename='js/logic.js') }}"></script>
+        <!-- <script src="{{ url_for('static', filename='js/logic_compare2.js') }}"></script> -->
+
+
+    </div>
+</body>
+</html>
