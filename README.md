@@ -1,4 +1,4 @@
 # school-finder
 
 # Project Team.
-![](Images/Amit.PNG)
+![](Images/Amit.png)   ![](Images/Dan.png)   ![](Images/Manu.png)
